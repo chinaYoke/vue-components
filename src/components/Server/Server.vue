@@ -11,7 +11,7 @@
 	import {serverBus} from '../../main';
 
 	export default {
-		props:['server'],
+		props:['server'],//父组件给组件传的值
 		methods:{
 			serverSelected(){
 				serverBus.$emit('serverSelected',this.server);

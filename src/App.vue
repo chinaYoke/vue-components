@@ -1,36 +1,27 @@
 <template>
-  <div class="container">
-    <!-- <app-header></app-header> -->
-    <!-- <Header></Header> -->
-    <!-- 从main引入 -->
-    <component-header></component-header>
-    <hr />
-    <div class="row">
-      <app-servers></app-servers>
-      <app-server-details></app-server-details>
-    </div>
-    <hr />
-    <router-view/>
-    <app-footer></app-footer>
+  <div id="app">
+    <app-home></app-home>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+    <app-new></app-new>
   </div>
 </template>
 
 <script>
 // 全局注册
-// import Header from "./components/Shared/Header.vue";
-import Footer from "./components/Shared/Footer.vue";
-import Servers from "./components/Server/Servers.vue";
-import ServerDetails from "./components/Server/ServerDetails.vue";
-
+//1.引入2.挂载组件3.在使用
+import Home from "./components/Home";
+import New from './components/New'
 export default {
   components: {
-    // "app-header": Header,
-    "app-servers": Servers,
-    "app-server-details": ServerDetails,
-    "app-footer": Footer
-  },
+    "app-home": Home,
+    "app-new": New
+  }
   // components:{
-  //   Header,
+  //   Home,
   // }
 };
 </script>

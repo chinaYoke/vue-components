@@ -7,8 +7,10 @@
 </template>
 
 <script>
+//父组件向子组件传值，
+// 1.父组件调用子组件的时候，绑定动态属性
+// 2.在子组件里面通过props接受父组件里面传过来的值
 import Server from "./Server.vue";
-
 export default {
   data: function() {
     return {
