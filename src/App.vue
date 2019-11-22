@@ -6,7 +6,7 @@
     <br/>
     <br/>
     <hr/>
-    <app-new></app-new>
+    <!-- <app-new></app-new> -->
   </div>
 </template>
 

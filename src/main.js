@@ -24,5 +24,3 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
-
-//父组件-子组件

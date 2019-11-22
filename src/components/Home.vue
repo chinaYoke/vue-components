@@ -18,12 +18,13 @@ import Count from "./Shared/Count.vue";
 import Footer from "./Shared/Footer.vue";
 
 import Bus from "./utils/bus.js";
-//父组件向子组件传值，
+//父组件向子组件传值， home=>footer
 // 1.父组件调用子组件的时候，绑定动态属性
 // 2.在子组件里面通过props接受父组件里面传过来的值
+
 //子组件向父组件传值
-// 使用$on(evntName)监听事件；
 // 使用$emit(eventName,optionalPayload)触发事件。
+// 使用$on(evntName)监听事件；
 // 另外，父组件可以在使用子组件的地方直接用v-on来监听子组件触发的事件。
 export default {
   components: {
