@@ -12,6 +12,7 @@ export default {
     props:['num'],
     methods:{
         increase(){
+          // this.num++
             this.$emit('incr')
         },
         decrease(){
